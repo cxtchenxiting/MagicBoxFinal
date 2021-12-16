@@ -80,7 +80,7 @@ public class Cursor : MonoBehaviour
         }
 
         //get input
-        Vector2 joy = new Vector2(Input.GetAxis("LeftJoyX"), -Input.GetAxis("LeftJoyY"));
+        Vector2 joy = new Vector2(Input.GetAxis("RightJoyX"), -Input.GetAxis("RightJoyY"));
         if (joy.magnitude < 0.3f) { return; }
         joy.Normalize();
 
